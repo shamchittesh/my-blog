@@ -88,4 +88,9 @@ Edit .gitmodules to make themes folder as a submodules for easy updates:
 
 ```bash
 $ git commit -m "first commit"
+$ git branch -M master
+$ git remote add origin <url>
+$ git push -u origin master
 ```
+
+

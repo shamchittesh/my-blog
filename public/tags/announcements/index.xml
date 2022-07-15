@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Announcements on Chittesh Sham</title>
-    <link>https://github.com/shamchittesh/my-blog/tags/announcements/</link>
+    <link>https://shamchittesh.github.io/my-blog/tags/announcements/</link>
     <description>Recent content in Announcements on Chittesh Sham</description>
     <image>
-      <url>https://github.com/shamchittesh/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://github.com/shamchittesh/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://shamchittesh.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://shamchittesh.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 15 Jul 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://github.com/shamchittesh/my-blog/tags/announcements/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Jul 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://shamchittesh.github.io/my-blog/tags/announcements/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello Cunts!</title>
-      <link>https://github.com/shamchittesh/my-blog/posts/first/</link>
+      <link>https://shamchittesh.github.io/my-blog/posts/first/</link>
       <pubDate>Fri, 15 Jul 2022 11:30:03 +0000</pubDate>
       
-      <guid>https://github.com/shamchittesh/my-blog/posts/first/</guid>
+      <guid>https://shamchittesh.github.io/my-blog/posts/first/</guid>
       <description>Before you say anything about disgraceful or tasteless my choice of words are, i&amp;rsquo;d like to take a moment to say to you that - this is my blog, not yours! Go build your fucking own! Speaking of building blogs , here&amp;rsquo;s why and how I built mine.
 Why? To have a repertoire of my learnings.
 How? I wanted something I could build fast and deploy easily and free, something lightweight thats why I chose Hugo</description>

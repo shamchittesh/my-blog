@@ -139,4 +139,46 @@ save.
 ### Advanced GitHub actions
 Instead of running **$ hugo** everytime to generate the static file, you can get GitHub to automatically do that for you on every push and it will also automatically deploy the static version of your site.
 
+for automatic builds, you need to create a file */.github/workflows/gh-pages.yml*
 
+```
+name: github pages
+
+on:
+  push:
+    branches:
+      - master  # Set a branch to deploy
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./doc
+
+```
+
+save it and thats it, it will be automatically added to your github actions workflows and run on every push to generate the hugo static website.
+
+
+Thats all folks,
+Next up I'll be working on a blockchain using zig programing language, just need to learn it

@@ -37,7 +37,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-Before you say anything about cliche and generic my choice of words for the title is, i'd like to take a moment to say to you that - this is my blog, not yours! Go build your own!
+Before you say anything about how cliche and generic my choice of words are fo the title, i'd like to take a moment to say to you that - this is my blog, not yours! Go build your own!
 Speaking of building blogs, here's why and how I built mine.
 
 # Why?

@@ -1,5 +1,5 @@
 ---
-title: "Hello Cunts!"
+title: "Hello World!"
 date: 2022-07-15T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
@@ -37,8 +37,8 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-Before you say anything about disgraceful or tasteless my choice of words are, i'd like to take a moment to say to you that - this is my blog, not yours! Go build your fucking own!
-Speaking of building blogs  , here's why and how I built mine.
+Before you say anything about cliche and generic my choice of words for the title is, i'd like to take a moment to say to you that - this is my blog, not yours! Go build your own!
+Speaking of building blogs, here's why and how I built mine.
 
 # Why?
 To have a repertoire of my learnings.   
@@ -68,29 +68,68 @@ $ hugo new site new-site -f yml
 ```
 
 ## Theming
-Go to https://themes.gohugo.io/ choose your favorite theme, they all come with installation guides.
+Go to https://themes.gohugo.io/ choose your favorite theme, they all come with installation guides. Installing via gitsubmodule, it will make it easier for updates.
 
 You'll prolly want to edit your config.yml file to specify your theme name and most importantly the baseurl
 
+#### activating theme
+To activate the theme edit the file ***config.yml*** and change/add the following line
 
-## github
+```hugo
+theme : theme-name
+```
+
+#### Creating a post
+the following command will create a new post
+```
+hugo new posts/first.md 
+```
+you can edit that file and add your blog contents below the **---** using markdown syntax. Heres a link to markdown formatting https://www.markdownguide.org/cheat-sheet/
+
+#### Generating the static website
+
+To serve the website live and see changes.
 ```bash
-git init
-touch .gitmodules
+$ hugo server
 ```
 
-Edit .gitmodules to make themes folder as a submodules for easy updates:
-```
-[submodule "themes/theme-name"]
-    path = /themes/theme-name
-    url = "theme-url-github"
-```
+then goto http://localhost:1313/
+
+Now make hugo generate the static html of your site, just use this simple command.
 
 ```bash
+$ hugo
+```
+
+## Publishing the website
+
+We are going to use github pages to publish our website and also use github actions as your CI/CD to automatically build and publish the static website.
+
+We need to prepare a few things before making a GitHub-Pages deployment, so open your config.yml file.
+
+#### publishdir
+add the following line
+```yml
+publishdir : docs
+```
+#### baseurl
+To get a baseURL, push your code to a github repository first
+Create a new repo in your GitHub account then push to it. Make sure you've ran **$ hugo** first if you have made any changes.
+```bash
+$ git add .
 $ git commit -m "first commit"
 $ git branch -M master
 $ git remote add origin <url>
 $ git push -u origin master
 ```
+
+change baseURL to the following
+```yml
+baseURL: "https://<username>.github.io/<repositoryname>"
+```
+do a final 
+
+### Advanced GitHub actions
+Instead of running **$ hugo** everytime to generate the static file, you can get GitHub to automatically do that for you on every push and it will also automatically deploy the static version of your site.
 
 

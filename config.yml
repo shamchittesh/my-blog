@@ -2,6 +2,7 @@ baseURL: "https://shamchittesh.github.io/my-blog/"
 title: Chittesh Sham
 paginate: 5
 theme: PaperMod
+publishDir : docs
 
 enableRobotsTXT: true
 buildDrafts: false

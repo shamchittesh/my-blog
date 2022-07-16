@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://shamchittesh.github.io/my-blog/sitemap.xml

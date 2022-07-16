@@ -127,7 +127,14 @@ change baseURL to the following
 ```yml
 baseURL: "https://<username>.github.io/<repositoryname>"
 ```
-do a final 
+run **$ hugo** and do a final git push.
+
+Then go to: https://github.com/<username>/<repositoryname>/settings/pages
+
+Change **master** as branch and choose **/docs** as folder.
+save.
+
+### Congratulations, your website is blog should now be published on  https://<username>/<repositoryname>/
 
 ### Advanced GitHub actions
 Instead of running **$ hugo** everytime to generate the static file, you can get GitHub to automatically do that for you on every push and it will also automatically deploy the static version of your site.

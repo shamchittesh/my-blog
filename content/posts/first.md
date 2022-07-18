@@ -37,8 +37,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-Before you say anything about how cliche and generic my choice of words are fo the title, i'd like to take a moment to say to you that - this is my blog, not yours! Go build your own!
-Speaking of building blogs, here's why and how I built mine.
+Here's a mini tutorial on how I built this blog. Using Ubuntu 20.04 as my local machine and hugo as the static website generator.
 
 # Why?
 To have a repertoire of my learnings.   
@@ -50,9 +49,9 @@ I wanted something I could build fast and deploy easily and free, something ligh
 ```
 DONT $ apt install hugo
 ```
-it didn't do shit for me except installing a decomposing 2020 version of hugo full of maggots.
+it didn't do shit for me except installing a decomposing 2020 version of hugo.
 
-Instead go to Hugo's github release page, get the debian package and knock yourself out https://github.com/gohugoio/hugo/releases
+Instead go to Hugo's github release page, get the debian package and run it to install https://github.com/gohugoio/hugo/releases
 
 Yeah next up, it would probably install it in /usr/local/bin/hugo
 so you gotta place that in your $PATH so that you can run the hugo command without specifying the whole path
@@ -129,7 +128,7 @@ baseURL: "https://<username>.github.io/<repositoryname>"
 ```
 run **$ hugo** and do a final git push.
 
-Then go to: https://github.com/<username>/<repositoryname>/settings/pages
+Then go to: ```https://github.com/<username>/<repositoryname>/settings/pages```
 
 Change **master** as branch and choose **/docs** as folder.
 save.

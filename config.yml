@@ -77,9 +77,9 @@ params:
     - name: twitter
       url: "https://twitter.com/tesh1224"
     - name: stackoverflow
-      url: "https://stackoverflow.com"
-    - name: github
       url: "https://stackoverflow.com/users/15487060/tess"
+    - name: github
+      url: "https://github.com/shamchittesh/"
 
   analytics:
     google:

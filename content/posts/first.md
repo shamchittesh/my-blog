@@ -44,7 +44,7 @@ Speaking of building blogs, here's why and how I built mine.
 To have a repertoire of my learnings.   
 
 # How?
-I wanted something I could build fast and deploy easily and free, something lightweight thats why I chose Hugo
+I wanted something I could build fast and deploy easily and free, something lightweight thats why I chose Hugo - an opensource static site generator https://gohugo.io/
 
 ## Installing Hugo
 ```
@@ -134,7 +134,7 @@ Then go to: https://github.com/<username>/<repositoryname>/settings/pages
 Change **master** as branch and choose **/docs** as folder.
 save.
 
-**Congratulations, your website is blog should now be published on  https://<username>/<repositoryname>/ **
+**Congratulations, your website is blog should now be published on  ```https://<username>/<repositoryname>/```**
 
 ### Advanced GitHub actions
 Instead of running **$ hugo** everytime to generate the static file, you can get GitHub to automatically do that for you on every push and it will also automatically deploy the static version of your site.
